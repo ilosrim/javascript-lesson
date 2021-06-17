@@ -60,7 +60,7 @@ let g1 = 3
 let g2 = 3
 // let oG = Math.sqrt(g1*g2)
 // console.log('o\'rta geometri: '+oG)
-console.log((g1*g2)**0.5)
+console.log('o\'rta geometri: '+(g1*g2)**0.5)
 
 // 10
 let s1 = 8, s2 = 2
