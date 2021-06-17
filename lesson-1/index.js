@@ -58,8 +58,9 @@ console.log('o\'rtachasi: '+(son1+son2)/2)
 // o'rta geometrigini topish
 let g1 = 3
 let g2 = 3
-let oG = Math.sqrt(g1*g2)
-console.log('o\'rta geometri: '+oG)
+// let oG = Math.sqrt(g1*g2)
+// console.log('o\'rta geometri: '+oG)
+console.log((g1*g2)**0.5)
 
 // 10
 let s1 = 8, s2 = 2
@@ -75,7 +76,8 @@ console.log('yig\'indisi: '+yig, '/ ko\'paytmasi: '+kop, '/ moduli: '+so1, so2)
 
 // 12
 let k1 = 12, k2 = 6
-let gip = Math.sqrt((k1**2)+(k2**2))
+// let gip = Math.sqrt((k1**2)+(k2**2))
+let gip = ((k1**2)+(k2**2))**0.5
 let perim = k1 + k2 + gip
 console.log('gipotenuza: '+gip, '/ perimetri: '+perim)
 
