@@ -11,12 +11,15 @@ else if (ball >= 60)    console.log('F')
 else console.log('Undefined')
 
 // 2
-// min 4 max 12
-let input = '123$321#'
+// if(input.match(/@#$%&*/))
+// min 4, max 12, agar tarkibda '@#$%&*' belgilaridan biri yoki hammasi ishtirok etsa 'Strong password'
 
-if ((input.includes('@') || input.includes('#') || input.includes('$') || input.includes('$')) && input.length >= 6){
+let password = '123$321#'
+
+// let pss = password.match(/(#|$)/gi)
+if ((password.includes('@') || password.includes('#') || password.includes('$') || password.includes('$')) && password.length >= 6){
     console.log(`Strong password`)
-}else if (input.length >= 4 && input.length <= 12){
+}else if (password.length >= 4 && password.length <= 12){
     console.log(`Correct password`)
 }else{
     console.log(`Not correct password`)
