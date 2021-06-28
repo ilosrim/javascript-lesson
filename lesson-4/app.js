@@ -113,8 +113,8 @@ var count = 0
 var juft = 0
 for(let i=0; i<toStr.length; i++){
     count += Number.parseInt(toStr[i])
-    if(Number.parseInt(toStr[i]) % 2 !== 0){
-       juft+=Number.parseInt(toStr[i])
+    if(Number.parseInt(toStr[i]) % 3 == 0){
+       juft++
     }
 }
 console.log(count, juft)
