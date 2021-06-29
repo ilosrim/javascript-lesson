@@ -118,3 +118,24 @@ for(let i=0; i<toStr.length; i++){
     }
 }
 console.log(count, juft)
+
+var str = '3a9b0c3d2e9f8g'
+// console.log(str.match(/\d+/g))
+const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
+// console.log(sentence.replace(/[^a-zA-Z .]/g,""))
+
+let a = 'BCA'
+let b = 'BAC'
+console.log(a.localeCompare(b, 'en', {sensitivity: 'base'}))
+let a1 = a.split('').sort()
+let a2 = b.split('').sort()
+console.log(a1)
+function test(){
+    for(let i=0; i<a1.length; i++){
+        for(let j=0; j<a2.length; j++){
+            if(a1[i]===a2[i]) return true;
+            else return false;
+        }
+    }
+}
+console.log(test())
