@@ -63,3 +63,16 @@ for (const num of newArr){
     if(num%2===0) console.log(`Juft son: ${num}`)
     else console.log(`Toq son: ${num}`);
 }
+
+// min-max
+// 1
+let minMaxArr = [515,484,658,64,11,4,54,61,46,44,65,98,878,7,65]
+
+console.log(Math.min(...minMaxArr));
+console.log(minMaxArr.sort((a,b)=>a-b)[0]);
+
+// 2
+console.log(Math.max(...minMaxArr));
+let sortArr = minMaxArr.sort((a,b)=>a-b)
+let lastIndexValue = sortArr.length - 1
+console.log(sortArr[lastIndexValue]);
