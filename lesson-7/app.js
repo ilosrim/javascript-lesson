@@ -5,8 +5,23 @@ let str2='cab'
 str1.length===str2.length && str1.split('').sort().join()===str2.split('').sort().join() ? console.log(true) : console.log(false);
 
 // 2
-const array = [22,4,65,3,66,5,95,959,2,7,11,13];
+const array = [22,4,1,2,3,4,5,959,2,7,11,1,65,3];
 
+let sum = 0
+array.slice(2,6).forEach((value)=>{
+    sum+=value
+})
+console.log(sum);
+
+let sum2 = 0
+array.forEach((v,i)=>{
+    if(i>2 && i < 6){
+        sum2 += i
+    }
+})
+console.log(sum2);
+
+console.log(array.filter((value)=>value===65))
 // 2.1
 // const isPrime = num => {
 //     for (let i = 2; num > i; i++) num % i == 0 && false;
@@ -52,7 +67,7 @@ const juft = () => array.filter((value)=>value % 2 === 0).sort((a,b)=>a-b)
 console.log(`Juft sonalr: ${juft()}`)
 
 // 
-const mevalar = ['olma', 'anor', 'anjiraaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']
+const mevalar = ['olma', 'anor', 'anjirAAAAAAAAAAA']
 let str = mevalar.join()
 console.log(`A harfi soni: ${str.match(/['a']/gi).length}`);
 
