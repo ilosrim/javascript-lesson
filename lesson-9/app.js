@@ -2,38 +2,49 @@ const arr = [
     {
         id: 1,
         name: 'Hasan',
-        age: 21,
+        age: 9,
+        salary: 120,
     },
     {
         id: 2,
         name: 'Husan',
         age: 15,
+        salary: 130,
     },
     {
         id: 3,
         name: 'Eshmat',
-        age: 33,
+        age: 11,
+        salary: 100,
     },
-    {
-        id: 4,
-        name: 'Toshmat',
-        age: 23,
-    },
-    {
-        id: 5,
-        name: 'G\'ishmat',
-        age: 25,
-    }
 ]
-arr.forEach((value)=>{
-    value.status = 5
-})
+function slaryFunc(){
+    let count = 0
+    arr.filter((value)=>{
+        if(value.age>10){
+            count+=value.salary
+        }
+    })
+    console.log(count);
+}
+slaryFunc()
 
-arr.sort((a, b) => a.age-b.age)
-// arr.sort((a, b) => a.id-b.id)
-console.log(arr);
 
 
+// function idSort(num){
+//     console.log(arr.filter((value) =>  value.id == num))
+//     // arr.forEach((val)=>  val.id == num && console.log(val))
+// }
+// idSort(5)
+// idSort(2)
+
+// 1
+// arr.forEach((value)=>{
+//     value.status = value.id
+// })
+// // 2
+// arr.sort((a, b) => a.age-b.age)
+// console.log(arr);
 
 
 
