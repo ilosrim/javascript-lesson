@@ -37,7 +37,9 @@ const userNum = {
     user7: 7777
 }
 let objKeys = Object.keys(userNum)
+let objValues = Object.values(userNum)
 // console.log(objKeys);
+// console.log(objValues);cd 
 
 // js masala 3
 const salary = {
