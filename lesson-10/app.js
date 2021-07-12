@@ -12,6 +12,31 @@ objInArray.map((value, index)=>{
     // console.log(value, index);
 })
 
+// ***********************************//
+function User (name, age, salary, admin){
+    this.userName = name;
+    this.userAge = age;
+    this.userSalary = salary;
+    this.isAdmin = admin;
+}
+const user1 = new User ('Mirsolih', 23, 200_000, true);
+const user2 = new User ('John', 28, 150_000, false);
+console.log(user1, user2);
+
+class Notebook {
+    constructor(model, hdd, ssd, ram, vram){
+        this.notModel = model;
+        this.notHDD = hdd;
+        this.notSSD = ssd;
+        this.notRAM = ram;
+        this.notVRAM = vram;
+    }
+}
+
+const myComp = new Notebook ('Acer / Core i3 10', '1T', '256GB', '16GB', '6GB')
+console.log(myComp.notModel);
+
+//***********************************//
 // js masala 1
 let user = {name: 'Mirsolih'};
 let userAge = {age: 23};
