@@ -43,7 +43,7 @@ slaryFunc()
 //     value.status = value.id
 // })
 // // 2
-// arr.sort((a, b) => a.age-b.age)
+// arr.sort((a, b) => a.age-b.age))
 // console.log(arr);
 
 
