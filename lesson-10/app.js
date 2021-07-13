@@ -5,12 +5,28 @@ const obj = {
     salary: 1200
 }
 
-let objInArray = Object.entries(obj)
-// console.log(objInArray);
+let dum = [
+   { name: "Jony", age: 17, budget: 3330 },
+   { name: "Tom", age: 40, budget: 6210 },
+   { name: "Jerry", age: 16, budget: 2140 },
+   { name: "Teylar", age: 31, budget: 4660 },
+   { name: "Bop", age: 23, budget: 8440 },
+];
+const result = dum.reduce((total, temp) => {
+   if (temp.age > 17) {
+      total += temp.budget
+   }
+   return total
+}, 0)
+console.log('result', result)
 
-objInArray.map((value, index)=>{
-    // console.log(value, index);
-})
+
+// let objInArray = Object.entries(obj)
+// // console.log(objInArray);
+
+// objInArray.map((value, index)=>{
+//     // console.log(value, index);
+// })
 
 // ***********************************//
 function User (name, age, salary, admin){
@@ -48,8 +64,13 @@ let userJob = {job: 'JS Developer'}
     job: 'JS Developer'
 }
 */
-const person = Object.assign({}, user, userAge, userJob)
+const person = Object.assign(user, userAge, userJob)
 // console.log(person);
+
+// 2-usul
+let allObject = { ...user, ...userAge, ...userJob}
+// console.log(allObject);
+
 
 // js masala 2
 const userNum = {
