@@ -5,20 +5,20 @@ const obj = {
     salary: 1200
 }
 
-let dum = [
-   { name: "Jony", age: 17, budget: 3330 },
-   { name: "Tom", age: 40, budget: 6210 },
-   { name: "Jerry", age: 16, budget: 2140 },
-   { name: "Teylar", age: 31, budget: 4660 },
-   { name: "Bop", age: 23, budget: 8440 },
+let persons = [
+   { name: "Ali", age: 17, budget: 3330 },
+   { name: "Vali", age: 40, budget: 6210 },
+   { name: "Hasan", age: 16, budget: 2140 },
+   { name: "Husan", age: 31, budget: 4660 },
+   { name: "John", age: 23, budget: 8440 },
 ];
-const result = dum.reduce((total, temp) => {
+const results = persons.reduce((total, temp) => {
    if (temp.age > 17) {
       total += temp.budget
    }
    return total
 }, 0)
-console.log('result', result)
+console.log('result', results)
 
 
 // let objInArray = Object.entries(obj)
