@@ -170,6 +170,7 @@ for(let i = '*'; i.length<8; i+='*'){
 let result = ''
 let row1 = ' * * * * * * * *'
 let row2 = '* * * * * * * *'
+
 for(let i = 0; i<8; i++){
     if(i%2==0) result += row1 +'\n'
     else result += row2 +'\n'
