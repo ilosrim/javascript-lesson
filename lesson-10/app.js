@@ -176,3 +176,8 @@ for(let i = 0; i<8; i++){
     else result += row2 +'\n'
 }
 console.log(result);
+
+// vazifa
+let gap = `O'zbekistonning 2021-yildagi jami qarzi $25 mlrdga yetdi`
+let son = gap.match(/[0-9]/g).map(val=>Number(val)).reduce((count,item)=>count+=item,0)
+console.log(son);
