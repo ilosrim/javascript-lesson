@@ -21,12 +21,12 @@ const results = persons.reduce((total, temp) => {
 console.log('result', results)
 
 
-// let objInArray = Object.entries(obj)
-// // console.log(objInArray);
+let objInArray = Object.entries(obj)
+// console.log(objInArray);
 
-// objInArray.map((value, index)=>{
-//     // console.log(value, index);
-// })
+objInArray.map((value, index)=>{
+    // console.log(value, index);
+})
 
 // ***********************************//
 function User (name, age, salary, admin){
