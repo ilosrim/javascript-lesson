@@ -179,7 +179,7 @@ console.log(result);
 
 // vazifa 1
 let gap = `O'zbekistonning 2021-yildagi jami qarzi $25 mlrdga yetdi`
-let son = gap.match(/[0-9]/g).map(val=>Number(val))
+let son = gap.match(/\d+/g).map(val=>Number(val)).reduce((a,b)=>a+=b,0)
 console.log(son);
 
 // vazifa 2
