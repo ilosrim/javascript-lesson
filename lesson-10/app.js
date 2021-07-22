@@ -217,6 +217,21 @@
 // console.log(count);
 
 // Tub son topish funksiyasi
+// 1
+// function showPrimeNumbers(limit){
+//     for(let number = 2; number <= limit; number++){
+//         let isPrime = true;
+//         for(let factor = 2; factor<number; factor++){
+//             if(number%factor===0){
+//                 return isPrime = false;
+//                 break;
+//             }
+//         }
+//         if(isPrime) console.log(number);
+//     }
+// }
+
+// 2
 function showPrimeNumbers(limit){
     for (let number = 2; number <= limit; number++)
         if (isPrime(number)) console.log(number);
