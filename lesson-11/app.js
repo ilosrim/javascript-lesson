@@ -47,3 +47,5 @@ const instagram = new Promise((resolve, reject) => {
 })
 
 instagram.then(res => console.log(res)).catch(err => console.log(err));
+
+//end js
