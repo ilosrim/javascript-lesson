@@ -36,6 +36,7 @@ console.log(7>>2);
 
 let login = 'abc';
 let passwd = 1233;
+
 const instagram = new Promise((resolve, reject) => {
     setTimeout(()=>{
         if (login === 'abc' && passwd === 123){
